@@ -5,11 +5,39 @@ name = "pypi"
 
 
 [packages]
-python_dotenv = "*"  # https://github.com/theskumar/python-dotenv
+argon2-cffi = "*"  # https://github.com/hynek/argon2_cffi
+cryptography = "*"  # https://github.com/pyca/cryptography
+psycopg2-binary = "*"  # https://github.com/psycopg/psycopg2
+redis = "*"  # https://github.com/antirez/redis
+sentry-sdk = "*"  # https://docs.sentry.io/quickstart/?platform=python
 slack_bolt = "*"  # https://slack.dev/bolt-python/
+whitenoise = "*"  # https://github.com/evansd/whitenoise
+
+# Django
+# ------------------------------------------------------------------------------
+django = "*"  # https://www.djangoproject.com/
+django-allauth = "*"  # https://github.com/pennersr/django-allauth
+django-cors-headers = "*"  # https://github.com/ottoyiu/django-cors-headers/
+django-environ = "*"  # https://github.com/joke2k/django-environ
+django-redis = "*"  # https://github.com/niwinz/django-redis
 
 
 [dev-packages]
+# Code quality
+# ------------------------------------------------------------------------------
 pycodestyle = "*"  # https://github.com/pycqa/pycodestyle
-pylint = "*"  # https://github.com/PyCQA/pylint
+pylint = "*"  # https://github.com/PyCQA/pylint/
+pylint-django = "*"  # https://github.com/PyCQA/pylint-django
+
+# Django
+# ------------------------------------------------------------------------------
+django-debug-toolbar = "*"  # https://github.com/jazzband/django-debug-toolbar
+django-extensions = "*"  # https://github.com/django-extensions/django-extensions
+
+# Testing
+# ------------------------------------------------------------------------------
+factory_boy = "*"  # https://github.com/FactoryBoy/factory_boy
 pytest = "*"  # https://github.com/pytest-dev/pytest
+pytest-cov = "*"  # https://github.com/pytest-dev/pytest-cov
+pytest-django = "*"  # https://github.com/pytest-dev/pytest-django
+pytest-pythonpath = "*"  # https://github.com/bigsassy/pytest-pythonpath
