@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+python_dotenv = "*"  # https://github.com/theskumar/python-dotenv
+slack_bolt = "*"  # https://slack.dev/bolt-python/
+
+
+[dev-packages]
+pycodestyle = "*"  # https://github.com/pycqa/pycodestyle
+pylint = "*"  # https://github.com/PyCQA/pylint
+pytest = "*"  # https://github.com/pytest-dev/pytest
+
+
+[requires]
+python_version = "3.8"
