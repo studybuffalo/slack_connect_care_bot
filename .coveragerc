@@ -1,0 +1,3 @@
+[run]
+include = ccb/*
+omit = *migrations*, *tests*, *__init__.py, *conftest.py
