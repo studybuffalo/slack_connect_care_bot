@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f5b655b64bb5089812ae36f19acac390065695cd96476c70356c02f2170d45de"
+            "sha256": "4f541b7bfa0381ddee052111bd5251150bf08f26f129a4878960c48c1b7c818d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,14 @@
         ]
     },
     "default": {
+        "python-dotenv": {
+            "hashes": [
+                "sha256:0c8d1b80d1a1e91717ea7d526178e3882732420b03f08afea0406db6402e220e",
+                "sha256:587825ed60b1711daea4832cf37524dfd404325b7db5e25ebe88c495c9f807a0"
+            ],
+            "index": "pypi",
+            "version": "==0.15.0"
+        },
         "slack-bolt": {
             "hashes": [
                 "sha256:750c2b8ae27b17d6bf01e6e10f81e84bcdf0af6ad2816fd9d4af93a8e06f5580",
