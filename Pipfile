@@ -44,4 +44,4 @@ pytest-pythonpath = "*"  # https://github.com/bigsassy/pytest-pythonpath
 
 
 [requires]
-python_version = "3.8"
+python_version = "3.7"
