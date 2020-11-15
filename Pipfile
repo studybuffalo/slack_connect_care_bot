@@ -13,7 +13,3 @@ slack_bolt = "*"  # https://slack.dev/bolt-python/
 pycodestyle = "*"  # https://github.com/pycqa/pycodestyle
 pylint = "*"  # https://github.com/PyCQA/pylint
 pytest = "*"  # https://github.com/pytest-dev/pytest
-
-
-[requires]
-python_version = "3.8"
