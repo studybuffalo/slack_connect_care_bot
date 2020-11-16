@@ -255,3 +255,9 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_ADAPTER = 'users.adapters.AccountAdapter'
 ACCOUNT_USER_DISPLAY = get_user_display
+
+
+# Slack Settings
+# ------------------------------------------------------------------------------
+SLACK_APP_TOKEN = env('SLACK_APP_TOKEN')
+SLACK_SIGNING_SECRET = env('SLACK_SIGNING_SECRET')
