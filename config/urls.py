@@ -8,6 +8,9 @@ from django.urls import include, path
 urlpatterns = [
     # Django Admin URLs
     path(settings.ADMIN_URL, admin.site.urls),
+
+    # App URLs
+    path('slack/', include('ccb.slack_app.urls', namespace='slack')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

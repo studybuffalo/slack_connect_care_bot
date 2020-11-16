@@ -2,6 +2,9 @@ from django.urls import path
 
 from . import views
 
+
+app_name = 'slack_app'
+
 urlpatterns = [
-    path('slack/events/', views.events, name='events'),
+    path('events/', views.events, name='events'),
 ]
