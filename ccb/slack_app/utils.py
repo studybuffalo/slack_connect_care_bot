@@ -14,7 +14,7 @@ app = App(
 def open_modal(client, event, logger):
   try:
     # view.publish is the method that your app uses to push a view to the Home tab
-    client.view_publish(
+    client.views_publish(
       # the user that opened your app's app home
       user_id=event["user"],
       # the view object that appears in the app home
