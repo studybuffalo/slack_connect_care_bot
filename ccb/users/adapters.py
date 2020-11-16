@@ -1,16 +1,20 @@
+"""Adapters for User model."""
 from typing import Any
 
-from allauth.account.adapter import DefaultAccountAdapter
-from allauth.socialaccount.adapter import DefaultSocialAccountAdapter
 from django.conf import settings
 from django.http import HttpRequest
 
+from allauth.account.adapter import DefaultAccountAdapter
+from allauth.socialaccount.adapter import DefaultSocialAccountAdapter
+
 
 class AccountAdapter(DefaultAccountAdapter):
+    """General account adapter."""
     def is_open_for_signup(self, request: HttpRequest):
         return getattr(settings, 'ACCOUNT_ALLOW_REGISTRATION', True)
 
 
 class SocialAccountAdapter(DefaultSocialAccountAdapter):
+    """Account Adapter for Social accounts."""
     def is_open_for_signup(self, request: HttpRequest, sociallogin: Any):
         return getattr(settings, 'ACCOUNT_ALLOW_REGISTRATION', True)
