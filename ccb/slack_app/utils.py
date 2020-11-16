@@ -59,3 +59,7 @@ def open_modal(client, event, logger):
 
   except Exception as e:
     logger.error(f"Error opening modal: {e}")
+
+@app.message('beep')
+def say_boop(message, say):
+    say('boop!')
