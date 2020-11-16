@@ -1,0 +1,18 @@
+[MASTER]
+load-plugins=pylint_django
+init-hook="from pylint.config import find_pylintrc; sys.path.append(os.path.join(os.path.dirname(find_pylintrc()), 'ccb'))"
+
+[FORMAT]
+max-line-length=120
+
+[MESSAGES CONTROL]
+disable=invalid-name
+
+[DESIGN]
+max-parents=13
+
+[SIMILARITIES]
+min-similarity-lines=20
+
+[TYPECHECK]
+generated-members=REQUEST,acl_users,aq_parent,"[a-zA-Z]+_set{1,2}",save,delete
