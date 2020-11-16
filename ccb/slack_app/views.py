@@ -2,7 +2,7 @@ from django.http import HttpRequest
 from django.views.decorators.csrf import csrf_exempt
 
 from slack_bolt.adapter.django import SlackRequestHandler
-from .utils import APP as app
+from .utils import app
 
 
 handler = SlackRequestHandler(app=app)
