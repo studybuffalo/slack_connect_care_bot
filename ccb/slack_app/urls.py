@@ -1,3 +1,4 @@
+"""URLs for the Slack App."""
 from django.urls import path
 
 from . import views

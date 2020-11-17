@@ -17,6 +17,7 @@ import environ
 
 from django.core.wsgi import get_wsgi_application
 
+
 # Setup the environment variable references
 env = environ.Env()
 env.read_env(str((environ.Path(__file__) - 2).path('config', 'settings', 'ccb.env')))
